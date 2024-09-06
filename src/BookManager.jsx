@@ -22,6 +22,7 @@ const BookManager = () => {
   const addBook = (newBook) => {
     setBooks([...books, newBook]);
   };
+  //console.log(newBook);
 
   const deleteBook = (title) => {
     setBooks(books.filter((book) => book.title !== title));
@@ -44,23 +45,20 @@ const BookManager = () => {
     // alert("Please fill in all fields.");
     // return;
 
-      // Check if book already exists for update
-      const bookExists = books.some((book) => book.title === title);
+    // Check if book already exists for update
+    const bookExists = books.some((book) => book.title === title);
 
-      if (bookExists) {
-        updateBook(title, { author, year: parseInt(year, 10) });
-      } else {
-        addBook({ title, author, year: parseInt(year, 10) });
-      }
-  
-      // Clear the form fields after submission
+    if (bookExists) {
+      updateBook(title, { author, year: parseInt(year, 10) });
+    } else {
+      addBook({ title, author, year: parseInt(year, 10) });
+    }
+
+    // Clear the form fields after submission
     //   setTitle("");
     //   setAuthor("");
     //   setYear("");
-
-};
-
-  
+  };
 
   return (
     <div>
@@ -105,7 +103,13 @@ const BookManager = () => {
             >
               Update
             </button>
-            <button>Delete</button>
+            <button
+              onClick={() => {
+                deleteBook(book.title);
+              }}
+            >
+              Delete
+            </button>
           </li>
         ))}
       </ul>
