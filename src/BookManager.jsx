@@ -9,6 +9,8 @@ const BookManager = () => {
     { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
   ]);
 
+  console.log(books);
+
   //Use useState to add Title, Author and Year to the added books
 
   const [title, setTitle] = useState("");
