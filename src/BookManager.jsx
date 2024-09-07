@@ -24,6 +24,8 @@ const BookManager = () => {
   };
   //console.log(newBook);
 
+  //Now does the Delete function work
+
   const deleteBook = (title) => {
     setBooks(books.filter((book) => book.title !== title));
   };

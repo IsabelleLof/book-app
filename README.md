@@ -1,3 +1,8 @@
+# Pseudo code for implementing the Google Books Api
+
+- Move the Mock data to a JSON file
+- Fetch the books from the API
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
