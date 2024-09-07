@@ -8,14 +8,14 @@
 
 import { useState } from "react";
 import "./App.css";
-import BookManager from "./Bookmanager";
+import BookManagerApi from "./BookManagerApi";
 
 function App() {
   return (
     <>
       <div>
         <h1>Book App</h1>
-        <BookManager />
+        <BookManagerApi />
       </div>
     </>
   );
