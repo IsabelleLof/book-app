@@ -3,6 +3,18 @@
 - Move the Mock data to a JSON file
 - Fetch the books from the API
 
+- Change the state management from useState to Global state with Redux Toolkit
+
+# CRUD operations on the books
+
+- add
+- delete
+
+# User Auoth
+
+A user kan log in and save his books on his profile page
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
