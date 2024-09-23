@@ -1,3 +1,18 @@
+# Krav för applikationen:
+- Redux Store med Redux Toolkit: Skapa och konfigurera en central Redux Store med hjälp av configureStore från Redux Toolkit.
+- Slices för Actions och Reducers: Använd Redux Toolkit's createSlice för att definiera både actions och reducers i samma modul. Slicen ska innehålla minst två reducer som påverkar state.
+- State Management: Hantera minst ett centralt state-objekt (t.ex. användardata, produktlista, uppgifter) med hjälp av Redux Toolkit.
+- Fetch API och Async Thunks: Använd Redux Toolkit's createAsyncThunk för att integrera API-anrop och hantera asynkrona operationer, där data hämtas och lagras i Redux store.
+- React-Redux: Använd useSelector och useDispatch för att hämta och uppdatera data från Redux store i dina komponenter.
+
+# Extra funktionalitet (frivilligt):
+- Implementera en sökfunktion som hämtar och filtrerar data från ett API och hanterar det via Redux Toolkit.
+- Hantera användarens session med autentisering och lagring av användarinformation i Redux Toolkit.
+- Skapa en funktion som låter användare redigera och radera data (exempelvis redigera en profil eller radera en uppgift), med Redux Toolkit's slices och CRUD-operationer.
+
+
+
+
 # Pseudo code for implementing the Google Books Api
 
 - Move the Mock data to a JSON file

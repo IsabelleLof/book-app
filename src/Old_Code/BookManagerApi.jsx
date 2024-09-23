@@ -1,3 +1,5 @@
+// 
+
 import React, { useState } from "react";
 
 // Simple Book Search using Google Books API
@@ -12,7 +14,7 @@ const BookManager = () => {
     if (!searchTerm) return;
 
     try {
-      const apiKey = "SECRET"; // Replace with your Google Books API key
+      const apiKey = ""; // Replace with your Google Books API key
       const response = await fetch(
         `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${apiKey}`
       );
