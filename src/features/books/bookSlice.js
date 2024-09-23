@@ -11,7 +11,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const searchBooks = createAsyncThunk(
   "books/searchBooks",
   async (searchTerm) => {
-    const apiKey = "AIzaSyBn0sbt4A0Efeb-zYnFuzMVn5wtR6L1jI0"; // Api nykeln från Google Books Api
+    // const apiKey = "AIzaSyBn0sbt4A0Efeb-zYnFuzMVn5wtR6L1jI0"; // Api nykeln från Google Books Api
     const response = await fetch(
       `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&key=${apiKey}`
     );
