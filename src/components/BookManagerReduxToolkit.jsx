@@ -56,7 +56,7 @@ const BookManagerReduxToolkit = () => {
   useEffect(() => {
     const fetchPopularBooks = async () => {
       try {
-        const response = await fetch("https://www.googleapis.com/books/v1/volumes?q=subject:popular&maxResults=10&key=AIzaSyBn0sbt4A0Efeb-zYnFuzMVn5wtR6L1jI0");
+        // const response = await fetch("https://www.googleapis.com/books/v1/volumes?q=subject:popular&maxResults=10&key=AIzaSyBn0sbt4A0Efeb-zYnFuzMVn5wtR6L1jI0");
         if (!response.ok) {
           throw new Error("Något gick fel");
         }
